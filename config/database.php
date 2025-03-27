@@ -21,4 +21,6 @@
     } else {
         echo "success connection";
     }
+
+    pg_close();
 ?>
