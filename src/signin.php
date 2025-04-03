@@ -21,7 +21,7 @@ GROUP BY
 	id;
 ";
 
-    res = pg_query($conn, $sql);
+    $res = pg_query($conn, $sql);
 
     if ($res){
         $row = pg_fetch_assoc($res);
@@ -30,7 +30,7 @@ GROUP BY
             echo "Login OK";
 
         }else{
-            echo"Cyka blyat! login failed"
+            echo"Cyka blyat! login failed";
         }
     }
 
