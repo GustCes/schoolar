@@ -35,7 +35,7 @@
             if ($res){
                 echo "User has been created succesfully";
             }else{
-            echo "Cyka blyat, un error";
+            echo "Cyka blyat! un error";
             }
         }
     }
