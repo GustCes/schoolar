@@ -14,11 +14,9 @@ include('../config/database.php');
 FROM
 	users
 WHERE
-	email = '$email' AND
-	password = '$passwd' AND
+	email = '$email' and
+	password = '$passwd' and
 	status = true
-GROUP BY
-	id;
 ";
 
     $res = pg_query($conn, $sql);
@@ -27,10 +25,10 @@ GROUP BY
         $row = pg_fetch_assoc($res);
         if($row['total'] > 0){
 
-            echo "Login OK";
+            echo " Login OK";
 
         }else{
-            echo"Cyka blyat! login failed";
+            echo " Cyka blyat! user doesnt exist";
         }
     }
 
