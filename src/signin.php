@@ -31,5 +31,4 @@ WHERE
             echo " Cyka blyat! user doesnt exist";
         }
     }
-
 ?>
