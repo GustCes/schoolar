@@ -26,7 +26,7 @@
             
             echo " Cyka blyat! ya tienes una cuenta con ese correo";
             header('refresh:0;
-            url=http://localhost/schoolar/src/signup');
+            url=http://localhost/schoolar/src/signup.php');
         }else{
             $sql = "INSERT INTO users (firstname, lastname, email, password)
                 VALUES('$fname','$lname','$email','$enc_pass')

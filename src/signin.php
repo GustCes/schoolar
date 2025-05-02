@@ -24,10 +24,10 @@ WHERE
     if ($res){
         $row = pg_fetch_assoc($res);
         if($row['total'] > 0){
-            echo " Login OK";
-            eader('Refresh:0; url=http://localhost/schoolar/src/signin.html');
+            //echo " Login OK";
+            header('Refresh:0; url=http://localhost/schoolar/src/home.php');
         }else{
-            echo " Cyka blyat! user doesnt exist";
+            echo " Cyka blyat! usuario o contraseña incorrecto";
         }
     }
 ?>
