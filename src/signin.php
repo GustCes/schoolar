@@ -2,8 +2,8 @@
 
 include('../config/database.php');
 
-    $email      = $_POST['mail'];
-    $passwd     = $_POST['pass'];
+    $email = $_POST['mail'];
+    $passwd = $_POST['pass'];
     
     $sql    =   "
     SELECT
@@ -24,9 +24,8 @@ WHERE
     if ($res){
         $row = pg_fetch_assoc($res);
         if($row['total'] > 0){
-
             echo " Login OK";
-
+            eader('Refresh:0; url=http://localhost/schoolar/src/signin.html');
         }else{
             echo " Cyka blyat! user doesnt exist";
         }
