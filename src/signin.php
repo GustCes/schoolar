@@ -21,6 +21,7 @@ WHERE
 	email = '$email' and
 	password = '$passwd' and
     status = true
+    GROUP by id
     ";
 
     $res = pg_query($conn, $sql);
