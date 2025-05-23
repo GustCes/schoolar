@@ -7,7 +7,8 @@
     $email      = $_POST['mail'];
     $passwd    = $_POST['pass'];
 
-    $enc_pass=sha1($passwd);
+    //$enc_pass=sha1($passwd);
+    $enc_pass=$passwd;
 
     $sql_mail_validation = "
     SELECT

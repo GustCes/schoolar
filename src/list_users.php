@@ -18,8 +18,9 @@
                     <th>Firstname</th>
                     <th>Lasttname</th>
                     <th>Email</th>
-                    <th>status</th>
-                    <td>...</th>
+                    <th>Status</th>
+                    <th>Photo</th>
+                    <td>...</td>
                 </tr>
                 <?php
                     //idk
@@ -43,10 +44,13 @@
                         echo "<td>". $row['lastname'] ."</td>";
                         echo "<td>". $row['email'] ."</td>";
                         echo "<td>". $row['status'] ."</td>";
+                        echo "<td align='center'><img src='photo users/pepe_base.jpg' width='100'</td>";
                         echo "<td>";
                         echo "<a href=''> <img src = 'icon/pepe_busca.jpg' width='50'> </a>";
                         echo "<a href=''> <img src = 'icon/edit.png' width='50'> </a>";
-                        echo "<a href=''> <img src = 'icon/pepe_delete.jpg' width='50'> </a>";
+                        echo "<a href='http://127.0.0.1/schoolar/src/delete.php''> <img src = 'icon/pepe_delete.jpg' width='50'> </a>";
+                        echo "</td>";
+                        echo "</tr>";
                     }
                 ?>
             </table>
